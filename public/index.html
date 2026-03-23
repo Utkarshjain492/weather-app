@@ -15,6 +15,22 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="/manifest.json?v=2"/>
+    <style>
+      #loader {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #0f172a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
+
+      #loader img {
+        width: 120px;
+      }
+    </style>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -27,6 +43,10 @@
     <title>Utkarsh Jain</title>
   </head>
   <body>
+    <div id="loader">
+      <img src="./logo512.png" alt="loader" />
+    </div>
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -39,5 +59,10 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+      <script>
+        window.addEventListener("load", () => {
+          document.getElementById("loader").style.display = "none";
+        });
+      </script>
   </body>
 </html>
