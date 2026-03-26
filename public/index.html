@@ -68,6 +68,29 @@
         window.addEventListener("load", () => {
           document.getElementById("loader").style.display = "none";
         });
+
+        const splash = document.createElement('div');
+        splash.style.cssText = `
+          position: fixed;
+          top: 0; left: 0;
+          width: 100vw; height: 100vh;
+          background: #0d1b2a;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          z-index: 9999;
+        `;
+        splash.innerHTML = `
+          <img src="/logo512.png" style="width:120px"/>
+          <p style="color:white; font-size:22px; 
+            margin-top:20px; font-family:sans-serif">
+            Utkarsh Jain
+          </p>
+        `;
+        document.body.appendChild(splash);
+        setTimeout(() => splash.remove(), 2000);
+
       </script>
   </body>
 </html>
