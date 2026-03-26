@@ -1,6 +1,6 @@
 {
   "name": "Weather App by Utkarsh Jain",
-  "short_name": "Utkarsh Jain",
+  "short_name": "Weather Forecast",
   "description": "Weather Forecast App",
   "start_url": "/",
   "display": "standalone",
