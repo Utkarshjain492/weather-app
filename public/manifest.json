@@ -1,6 +1,6 @@
 {
-  "name": "Weather App",
-  "short_name": "Utkarsh Jain",
+  "name": "Weather App by Utkarsh Jain",
+  "short_name": "Weather Forecast",
   "description": "Weather Forecast App",
   "start_url": "/",
   "display": "standalone",
@@ -21,7 +21,7 @@
       "purpose": "any"
     },
     {
-      "src": "/icon-maskable-512.png",
+      "src": "/logo512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
